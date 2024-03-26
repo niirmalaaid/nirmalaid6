@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+   <body bgcolor="#FF90BC">
+     <div class="cursor"></div>
+     <script src="script.js" defer></script>
+     <div class="parallax"> 
+        <div class="navbar">
+          <img src="logonirmala.png" width=100 px height=100px border-radius:50% object-fit: cover margin-bottom: 1rem>
+          
+          <img src="sanur.png" width=75 px height=100 px
+            >
+          <ul align=center>
+
+            <a href="index.html"><img src= "index.png" width= 100 px height=50 px></a>
+              <a href="abstract.html"><img src= "abstract.png" width= 100 px height=50 px></a>
+
+         <div class="dropdown">
+           <button class="dropbtn"><img src= "pendahuluantujuan.png" width=100 px height=50 px>  <i class="fa fa-caret-down"></i>
+             </button>
+           <div class="dropdown-content">
+        <a href="latar.html">2.1 Latar Belakang Kegiatan</a>
+        <a href="maksud.html">2.2 Maksud dan Tujuan Kegiatan</a>
+        <a href="manfaat.html">2.3 Manfaat Kegiatan</a>
+        
+
+        </div></div>
+
+            <div class="dropdown">
+            <button class="dropbtn"><img src= "rencanakegiatan.png" width=100 px height=50 px>  <i class="fa fa-caret-down"></i>
+             </button>
+            <div class="dropdown-content">
+               <a href="produk.html">4.1 Perencanaan Produk</a>
+                <a href="promosi.html">4.2 Perencanaan Promosi</a>
+                <a href="booth.html">4.3 Perencanaan Booth</a>
+            </div></div>
+
+            <div class="dropdown">
+            <button class="dropbtn"><img src= "hasilkegiatan.png" width=100 px height=50 px><i class="fa fa-caret-down"></i>
+             </button>
+        <div class="dropdown-content">
+           <a href="pelaksanaan.html">5.1 Laporan Pelaksanaan</a>
+            <a href="keuangan.html">5.2 Laporan Keuangan</a>
+            <a href="statistika.html">5.3 Statistik Jualan</a>
+            <a href="refleksi.html">5.4.1 Refleksi Agama dan PPKn </a>
+            <a href="biotek.html">5.5 Proses Pembuatan Produk Bioteknologi dan Olahan Peternakan atau Perikanan</a>
+        </div></div>
+
+            <div class="dropdown">
+        <button class="dropbtn"><img src= "penutup.png" width=100 px height=50 px><i class="fa fa-caret-down"></i>
+             </button>
+        <div class="dropdown-content">
+           <a href="kesimpulan.html">6.1 Kesimpulan</a>
+            <a href="saran.html">6.2 Saran</a>
+            <a href="daftarpustaka.html">Daftar Pustaka</a>
+        </div></div>
+
+            <div class="dropdown">
+        <button class="dropbtn"><img src= "lampiranbtn.png" width=100 px height=50 px><i class="fa fa-caret-down"></i>
+             </button>
+        <div class="dropdown-content">
+           <a href="lampiran.html">Lampiran</a>
+            <a href="ppt.html">Presentation!!</a>
+        </div>
+        </div> </div>
+      </ul>
+    </div>
+     <script src="script.js"></script>
+    <main>
+      <div class="hero">
+          <img src="bgfinal.png" class="parallax bg-final" id="bg-final" />
+          <img src="pohonfinalle.png" class="parallax bg-pohon" id="bg-pohon" />
+          <img src="tinkerbell.png" class="parallax bg-tink" id="tink"/>
+          <img src="silvermist.png" class="parallax bg-silv" id="silv"/>
+          <img src="fawn.png" class="parallax bg-fawn" id="fawn"/>
+          <img src="rosetta.png" class="parallax bg-rose" id="rose"/>
+          <img src="backforeground.png" class="parallax bg-bgf" id="fore"/>
+          <div class="text">
+              <h1 id="heading1">Nirmala Website</h1>
+              <h2 id="heading2">Cari Kebahagiaan? Nirmala Solusinya</h2>
+          </div>
+      </div>
+
+      <script>
+          window.addEventListener('scroll', function () {
+              let value = window.scrollY;
+              // Adjusting the margin based on scroll position
+              heading1.style.marginLeft = value * 10 + 'px';
+              heading2.style.marginLeft = value * 10 + 'px';
+          });
+
+          window.addEventListener('mousemove', function (event) {
+              // Adjusting the position based on mouse movement
+              let x = event.clientX / window.innerWidth - 0.5;
+              let y = event.clientY / window.innerHeight - 0.5;
+              // Applying parallax effect to the elements
+              bgFinal.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+              bgPohon.style.transform = 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)';
+              tink.style.transform = 'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)';
+              silv.style.transform = 'translate(-' + x * 15 + 'px, -' + y * 15 + 'px)';
+              fawn.style.transform = 'translate(-' + x * 25 + 'px, -' + y * 25 + 'px)';
+              rose.style.transform = 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)';
+          });
+
+        document.addEventListener('mousemove', function(e) {
+            let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            tink.style.transform = 'translate(-50%, -50%) translateX(' + xAxis + 'px) translateY(' + yAxis + 'px)';
+            silv.style.transform = 'translate(-50%, -50%) translateX(' + xAxis + 'px) translateY(' + yAxis + 'px)';
+            fawn.style.transform = 'translate(-50%, -50%) translateX(' + xAxis + 'px) translateY(' + yAxis + 'px)';
+            rose.style.transform = 'translate(-50%, -50%) translateX(' + xAxis + 'px) translateY(' + yAxis + 'px)';
+        });
+      </script>
+
+      <style> 
+      h2 {
+        color: white;
+      }
+      </style> 
+      <center>
+        <div class="text">
+      <h1> Meet Our Team</h1> 
+          <div class="txtslay">
+      <h2> Hi‼ We're Nirmala's crew, hover me please*ೃ༄ </h2> <br> <br> <br>  <br> </center> </div> 
+
+          
+      <div class="card-page">
+         
+        <a
+          
+          alt="Mythrill"
+          target="_blank"
+        >
+          <div class="card">
+            <div class="wrapper">
+              <img
+                src="picnadine.jpg"
+                class="cover-image"
+              />
+            </div>
+            <img
+              src="txtnadine-removebg-preview.png"
+              class="title"
+            />
+            <img
+              src="nadinechara.png"
+              class="character"
+            />
+          </div> <br>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5zA8vzDGqPl2AzZkEYQGKh?utm_source=generator" width="300px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </a>
+
+        <a
+          alt="Mythrill"
+          target="_blank"
+        >
+          <div class="card">
+            <div class="wrapper">
+              <img
+                src="picjoslin.jpg"
+                class="cover-image"
+              />
+            </div>
+            <img
+              src="joslintxt-removebg-preview.png"
+              class="title"
+            />
+            <img
+              src="joslinchara.png"
+              class="character"
+              width: 200%;
+            />
+          </div> <br>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/77sMIMlNaSURUAXq5coCxE?utm_source=generator" width="300px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </a>
+        
+        <a
+         
+          alt="Mythrill"
+          target="_blank"
+        >
+          <div class="card">
+            <div class="wrapper">
+              <img
+                src="picmarcha.jpg"
+                class="cover-image"
+              />
+            </div>
+            <img
+              src="marchatxt-removebg-preview.png"
+              class="title"
+            />
+            <img
+              src="marchachara.png"
+              class="character"
+            />
+          </div> <br> 
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4xqrdfXkTW4T0RauPLv3WA?utm_source=generator" width="300px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </a>
+
+        <a
+          
+          alt="Mythrill"
+          target="_blank"
+        >
+          <div class="card">
+            <div class="wrapper">
+              <img
+                src="picstefi.jpg"
+                class="cover-image"
+              />
+            </div>
+            <img
+              src="stefitxt-removebg-preview.png"
+              class="title"
+            />
+            <img
+              src="stefichara.png"
+              class="character"
+            />
+          </div>
+          <br>
+          
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f?utm_source=generator&theme=0" align=center width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </a>
+      </div>
+    </main>
+
+     <style>
+       .music{
+         background: url(webbg2.png);
+         
+       } 
+       </style>
+
+     <section class="music">
+       <table border="0" cellpadding="10">
+          <tr>
+            <td width="20%">
+              <h3 align=center> Here's a lil surprise for you!! 🤩 Listen to our music while you're scrolling through our website! I guarantee that you'll feel the heat and beat of the music, so don't forget to turn up the volume! 😉 </h3> 
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/56EkMVbJqKWTw73Iqw1CLd?utm_source=generator" width="600" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </td>
+         <td width="80%"><div class="text">
+           <h2 align=center> Our Gallery 🦋 </h2> </div>
+           <style>
+             .slideshow-container {
+               max-width: 600px; /* Adjust the max-width as per your preference */
+               position: relative;
+               margin: auto;
+               max-height:500px ;
+             }
+
+             /* Styles for images */
+             .mySlides img {
+               width: 500px; /* Make the images responsive */
+               height: auto; /* Preserve aspect ratio */
+               max-width: 600px; /* Set the maximum width of the images */
+               max-height: 400px;
+             }
+
+             /* Styles for notes */
+             .notes {
+               text-align: center;
+               margin-top: 10px;
+               background-color: #E1AFD1;
+             }
+
+             /* Styles for navigation dots */
+             .dot {
+               cursor: pointer;
+               height: 15px;
+               width: 15px;
+               margin: 0 2px;
+               background-color: #bbb;
+               border-radius: 50%;
+               display: inline-block;
+               transition: background-color 0.6s ease;
+             }
+           </style>
+           </head>
+           <body>
+
+            <div class="slideshow-container">
+              <!-- Slide images -->
+              <div class="mySlides">
+                <img src="nirms1.jpg" style="width:100%">
+                <div class="notes">Our Products</div>
+              </div>
+
+              <div class="mySlides">
+                <img src="nirms2.jpg" style="width:100%">
+                <div class="notes">Bazaar Day (All the products were sold out) </div>
+              </div>
+
+              <div class="mySlides">
+                <img src="nirms3.jpg" style="width:100%">
+                <div class="notes">Making biotechnology</div>
+              </div>
+
+              <div class="mySlides">
+                <img src="nirms5.jpg" style="width:100%">
+                <div class="notes">Packing the products</div>
+              </div>
+
+              <!-- Navigation dots -->
+              <div style="text-align:center">
+                <br> <span class="dot"></span>
+                <span class="dot"></span>
+                 <span class="dot"></span>
+                <span class="dot"></span> 
+              </div>
+            </div>
+
+            <script>
+              var slideIndex = 0;
+              showSlides();
+
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+            </script>
+
+        </td> </tr> </table>
+     </section>
+        </div>
+      </center>
+    </main>
+     </body>
+</html>
